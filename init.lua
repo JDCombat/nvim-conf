@@ -190,6 +190,8 @@ require('lazy').setup({
 -- [[ Setting options ]]
 -- See `:help vim.o`
 
+require('command-completion').setup()
+require("nvim-tree").setup()
 -- Set highlight on search
 vim.o.hlsearch = false
 
@@ -490,6 +492,6 @@ cmp.setup {
     { name = 'luasnip' },
   },
 }
-
+vim.g.python3_host_prog = '/usr/bin/python3'
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
